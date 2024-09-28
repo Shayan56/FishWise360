@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Catch Data Repository</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Fish Catch Data</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#visuals">Visuals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#data">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero-section text-center text-white">
+    <div class="container">
+      <h1 class="display-4">Geo-Referenced Fish Catch Data System</h1>
+      <p>"Facilitating species-specific fisheries forecast through integrated fish catch data."</p>
+      <a href="#data" class="btn btn-lg btn-primary mt-4">Explore Data</a>
+    </div>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="container text-center my-5">
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="stats-box bg-gradient p-4 rounded shadow">
+          <h2>993</h2>
+          <p>Total Data Points</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-box bg-gradient p-4 rounded shadow">
+          <h2>260</h2>
+          <p>Species Monitored</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-box bg-gradient p-4 rounded shadow">
+          <h2>22</h2>
+          <p>Geographical Regions</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="stats-box bg-gradient p-4 rounded shadow">
+          <h2>154</h2>
+          <p>Research Institutions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Visualizations -->
+  <div class="container my-5" id="visuals">
+    <h2 class="text-center mb-4">Data Visualizations</h2>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="chart-container p-3 mb-4">
+          <canvas id="fishCatchByLocation"></canvas>
+        </div>
+        <div class="chart-container p-3">
+          <canvas id="fishCatchBySpecies"></canvas>
+        </div>
+      </div>
+
+      <div class="col-md-5">
+        <div class="card mb-3 shadow">
+          <div class="card-header">Species Occurrence by Region</div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Region</th>
+                  <th>Species</th>
+                  <th>Occurrences</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Indian Ocean</td>
+                  <td>Tuna</td>
+                  <td>483</td>
+                </tr>
+                <tr>
+                  <td>Bay of Bengal</td>
+                  <td>Sardine</td>
+                  <td>435</td>
+                </tr>
+                <tr>
+                  <td>Arabian Sea</td>
+                  <td>Mackerel</td>
+                  <td>524</td>
+                </tr>
+                <tr>
+                  <td>Lakshadweep Sea</td>
+                  <td>Pomfret</td>
+                  <td>565</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card shadow">
+          <div class="card-header">Fish Catch by Species (Abundance)</div>
+          <div class="card-body">
+            <canvas id="fishSpeciesPie"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Table -->
+  <div class="container my-5" id="data">
+    <h2 class="text-center mb-4">Fish Catch Data Table</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center shadow">
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>AVG Occurrences</th>
+            <th>AVG Weight (kg)</th>
+            <th>Species</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Depth (m)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gujarat</td>
+            <td>69.75</td>
+            <td>49</td>
+            <td>Sardine</td>
+            <td>22.57</td>
+            <td>72.5</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Karnataka</td>
+            <td>64.96</td>
+            <td>25.89</td>
+            <td>Mackerel</td>
+            <td>20.21</td>
+            <td>73.8</td>
+            <td>45</td>
+          </tr>
+          <tr>
+            <td>Maharashtra</td>
+            <td>65.23</td>
+            <td>21.17</td>
+            <td>Tuna</td>
+            <td>18.54</td>
+            <td>74.2</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Tamil Nadu</td>
+            <td>82.38</td>
+            <td>32.17</td>
+            <td>Pomfret</td>
+            <td>11.65</td>
+            <td>80.2</td>
+            <td>40</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>&copy; 2024 Fish Catch Data Repository | Powered by INCOIS</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
