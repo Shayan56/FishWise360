@@ -1,0 +1,54 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+  }
+  
+  .navbar-brand {
+    font-weight: bold;
+  }
+  
+  .hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1536481303222-8ecade2fa43d?fit=crop&w=1350&h=600&q=80') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .stats-box {
+    font-size: 1.4rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .stats-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .table thead {
+    background-color: #e0f7fa;
+  }
+  
+  .table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .chart-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  
