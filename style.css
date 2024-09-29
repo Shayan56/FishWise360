@@ -8,10 +8,11 @@ body {
   }
   
   .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1536481303222-8ecade2fa43d?fit=crop&w=1350&h=600&q=80') no-repeat center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') no-repeat center center;
     background-size: cover;
     padding: 100px 0;
-  }
+}
+
   
   .hero-section h1 {
     font-size: 3rem;
